@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Livres disponibles</h1>
+ {% for livre in livres %}
+ <p>image</p>
+<p>{{ livre.auteur }}</p>
+<p>{{ livre.titre }}</p>
+<p>{{ livre.editeur }}</p>
+ {% endfor %}
+{% endblock %}
